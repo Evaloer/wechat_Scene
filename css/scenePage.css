@@ -1,0 +1,540 @@
+@charset "utf-8";
+
+/* CSS Document */
+body,
+p,
+ul,
+ol,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+td,
+input,
+select,
+textarea,
+figure {
+	margin: 0;
+	padding: 0;
+}
+html,body{
+    height:100%;
+}
+html{
+    font-size: 26.67vw;
+}
+body {
+    font-family: PingFangSC-Light, 微软雅黑;
+    background:url(../img/back-img.jpg) no-repeat center;
+    background-size:cover;
+    position: relative;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	border: none;
+	display: block;
+}
+/* swiper-container */
+.swiper-container {
+    width: 100%;
+    height:100%;
+}
+.swiper-slide{
+    color:white;
+}
+#BGM{
+    display: none;
+}
+.note_music{
+    width:.5rem;
+    height:.5rem;
+    position: absolute;
+    top:.17rem;
+    left:3.2rem;
+    z-index: 100;
+}
+.note_music img:first-child{
+    width:.35rem;
+    height:.35rem;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.note_music img:last-child{
+    width:.5rem;
+    height:.5rem;
+    position: absolute;
+    left:-.05rem;
+    top:-.1rem;
+    display: block;
+}
+@-webkit-keyframes rotation{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+.Rotation{
+    -webkit-transform: rotate(360deg);
+    animation: rotation 3s linear infinite;
+    -moz-animation: rotation 3s linear infinite;
+    -webkit-animation: rotation 3s linear infinite;
+    -o-animation: rotation 3s linear infinite;
+}
+.hint_img{
+    width:.3rem;
+    height:.12rem;
+    position: absolute;
+    left:46%;
+    top:96%;
+    z-index: 50;
+    opacity: 0.8;
+    animation: up 1.5s infinite;
+}
+.hint_img img{
+    width:.3rem;
+    height:.12rem;
+}
+@-webkit-keyframes up{
+    from {
+        top:96%;
+        opacity: 0.8;
+        }
+    to {
+        top:93%;
+        opacity: 0;
+    }
+}
+/* onePage */
+.onePage{
+    width:100%;
+    height:100%;
+    background:url(../img/back-smog.jpg) no-repeat;
+    background-size:cover;
+}
+.themePort{
+    width:100%;
+    height:4rem;
+    background:url(../img/smog02.jpg) no-repeat center;
+    background-size:cover; 
+    margin-top: .8rem;
+}
+.plate{
+    width:100%;
+    height:3rem;
+    position: relative;
+    z-index: 1;
+}
+.plate img{
+    width:3rem;
+    height:3rem;
+    margin-left: .55rem;
+}
+.smog_box{
+    width:1.7rem;
+    height:3.6rem;
+    background:url(../img/smog02.jpg) no-repeat left;
+    background-size:100% 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.smog_box_a{
+    top:.4rem;
+    left:.2rem;
+}
+.smog_box_b{
+    top:-.7rem;
+    left:2.2rem;
+}
+.txt-knife{
+    width:100%;
+    height:1rem;
+    display:flex;
+    position: relative;
+}
+.knife_left,.knife_right{
+    width:.4rem;
+    height:2.5rem;
+    position: absolute;
+    top:-1.3rem;
+    left:.1rem;
+}
+.knife_right{
+    left:3.3rem;
+}
+.knife_left img,
+.knife_right img{
+    width:.4rem;
+    height:2.5rem;
+}
+.knife-txt{
+    width:2.8rem;
+    display: flex;
+    justify-content: space-between;
+    margin: .1rem 0 0 .35rem;
+}
+.knife-txt img:last-child{
+    height:.85rem;
+    margin-left:.15rem;
+}
+.knife-txt img{
+    height:.75rem;
+}
+.light{
+    width:3.7rem;
+    position: absolute;
+    top:.65rem;
+}
+/* twoPage */
+.twoPage{
+    width:100%;
+    height:100%;
+    background:url(../img/back-other.jpg) no-repeat;
+    background-size:cover;
+}
+.head_text{
+    width:3rem;
+    height:.8rem;
+    /* background: #666; */
+    padding:.1rem;
+}
+.head_txt_top{
+    height:.4rem;
+}
+.star_text{
+    width:3rem;
+    height:.35rem;
+    display:flex;
+    position: relative;
+}
+.star_text img:first-child{
+    height:.28rem;
+    margin-top:.1rem;
+}
+.star_text img:last-child{
+    height:.4rem;
+}
+.head_star{
+    width:.7rem;
+    height:.7rem;
+    position: absolute;
+    left:1.3rem;
+    top:.2rem;
+}
+.center_img{
+    width:100%;
+    height:3.4rem;
+    background:url(../img/smog04.jpg) no-repeat;
+    background-size:3.4rem 3.4rem;
+    display:flex;
+    margin-top:.1rem;
+}
+.center_left{
+    width:2.4rem;
+    height:2.4rem;
+    margin-top:.5rem;
+    margin-left:.05rem;
+}
+.center_right{
+    width:1.35rem;
+    height:3.5rem;
+}
+.center_right img{
+    width:1.35rem;
+}
+.bottom_a{
+    width:2.3rem;
+    height:.6rem;
+    background:url(../img/black_paper.jpg) no-repeat;
+    background-size:2.4rem .8rem;
+    padding:.2rem 0 0 .1rem;
+    margin-top:.1rem;
+}
+.bottom_a p{
+    font-size: .18rem;
+}
+.bottom_b{
+    width:1.2rem;
+    height:.5rem;
+    background:url(../img/white_paper.jpg) no-repeat;
+    background-size:1.2rem .5rem;
+    padding-top:.05rem;
+    /* padding:.2rem 0 0 .1rem; */
+    text-align: center;
+    margin:.1rem .2rem 0 2.4rem;
+}
+.bottom_b p{
+    font-size:.3rem;
+    color:darkred;
+}
+.intr_title{
+    font-size: .13rem;
+    color:orange;
+    line-height: .2rem;
+    padding-left:.1rem;
+}
+/* threePage */
+.threePage{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.back_three{
+    width:100%;
+    height:100%;
+    background:url(../img/back_three.jpg) no-repeat right;
+    background-size:cover;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -5;
+}
+.head_badge{
+    width:.6rem;
+    height:.7rem;
+    position: absolute;
+    left:1.3rem;
+    top:.2rem;
+}
+.plank_box{
+    width:100%;
+    height:2.6rem;
+    /* background:#777; */
+    position: relative;
+    margin-top: .2rem;
+    /* border-bottom:2px dashed orange; */
+}
+.plank_a{
+    width:2.8rem;
+    height:1rem;
+    position: absolute;
+    top:.55rem;
+    left:23%;
+}
+.steak_b{
+    width:2rem;
+    height:1.9rem;
+    position: absolute;
+    top:.2rem;
+    left:2%;
+    z-index: 5;
+}
+.ingred_a{
+    width:.7rem;
+    height:.85rem;
+    position: absolute;
+    top:.35rem;
+    left:52%;
+}
+.plank_title{
+    width:1.6rem;
+    /* height:.45rem; */
+    position: absolute;
+    top:1.53rem;
+    left:1.9rem;
+}
+.plank_title p{
+    font-size:.16rem;
+}
+.plank_title span{
+    display: block;
+    font-size:.13rem;
+    color:orange;
+}
+.paper_money{
+    width:1.1rem;
+    height:.45rem;
+    background: url(../img/white_paper.jpg) no-repeat;
+    background-size: cover; 
+    position: absolute;
+    top:3.2rem;
+    left:2.55rem;
+    text-align: center;
+    padding-top:.07rem;
+}
+.paper_money p{
+    font-size:.3rem;
+    color:darkred;
+}
+.plank_box_b{
+    margin-top:0;
+}
+.paper_money_b{
+    top:87%;
+}
+/* fourPage */
+.fourPage{
+    width:100%;
+    height:100%;
+}
+.head_praise{
+    width:.6rem;
+    height:.6rem;
+    position: absolute;
+    left:1.3rem;
+    top:.2rem;
+    /* transform: rotate(30deg); */
+}
+.steak_part{
+    width:95%;
+    height:2.45rem;
+    padding:.18rem .1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.steak_box_a{
+    width:1.6rem;
+    height:2.45rem;
+    background:url(../img/back-border.jpg) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.steak_d{
+    width:1.9rem;
+    height:1.8rem;
+    position: absolute;
+    top:-.2rem;
+    left:-.05rem;
+}
+.steak_box_title{
+    width:1.6rem;
+    /* height:.45rem; */
+    position: absolute;
+    top:1.53rem;
+    left:.1rem;
+    /* background:#999; */
+}
+.steak_box_title p{
+    font-size:.16rem;
+    line-height: .18rem;
+}
+.steak_box_title span{
+    font-size:.13rem;
+    color:orange;
+    display:block;
+}
+.steak_box_paper{
+    width:1rem;
+    height:.38rem;
+    background: url(../img/white_paper.jpg) no-repeat;
+    background-size: 100% 100%; 
+    position: absolute;
+    top:1.95rem;
+    left:.7rem;
+    text-align: center;
+    padding-top:.05rem;
+}
+.steak_box_paper p{
+    font-size:.25rem;
+    color:darkred;
+}
+/* fourPage */
+.fivePage{
+    width:100%;
+    height:100%;
+}
+.head_3{
+    width:.5rem;
+    height:.8rem;
+    position: absolute;
+    left:.1rem;
+    top:.55rem;
+    /* transform: rotate(30deg); */
+}
+.num_p{
+    font-size: .16rem;
+    position: absolute;
+    left:.55rem;
+    top:.95rem;
+}
+.steak_classify{
+    width:100%;
+    height:3rem;
+    /* background:#999; */
+    margin-top: 2.6rem;
+    display:flex;
+}
+.classify_a{
+    width:25%;
+    /* background:#666; */
+}
+.classify_a img{
+    width:100%;
+    height:.9rem;
+}
+.classify_text{
+    width:.5rem;
+    height:1.4rem;
+    background:url(../img/black-paper02.jpg) no-repeat;
+    background-size:100% 100%;
+    margin:0 auto;
+    padding-top:.1rem;
+}
+.classify_text p{
+    width:.25rem;
+    font-size: .2rem;
+    margin:0 auto;
+}
+/* sixPage */
+.sixPage{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.followUs_box{
+    width:100%;
+    height:4.5rem;
+    background:url(../img/smog03.jpg) no-repeat;
+    background-size:105% 100%;
+    position: absolute;
+    top:.1rem;
+    left:0;
+    z-index: -2;
+}
+.foll_us{
+    width:2rem;
+    height:.5rem;
+    margin:.3rem auto .3rem;
+    z-index: 20;
+}
+.foll_back{
+    width:2.6rem;
+    margin:.2rem auto 0;
+    z-index:5;
+}
+.foll_border{
+    width:1.9rem;
+    position: absolute;
+    top:1.45rem;
+    left:25%;
+    z-index: 6;
+}
+.baiduCode{
+    width:1.7rem;
+    position: absolute;
+    top:1.53rem;
+    left:27.7%;
+}
+.usTitle{
+    width:2.6rem;
+    height:.6rem;
+    background:url(../img/black_paper.jpg) no-repeat;
+    background-size:100% 100%;
+    margin-top: 1rem;
+    padding-top:.2rem;
+}
+.usTitle p{
+    font-size:.2rem;
+    text-indent: .2rem;
+}
